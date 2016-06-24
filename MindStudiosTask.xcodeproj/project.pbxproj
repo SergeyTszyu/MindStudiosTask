@@ -14,7 +14,7 @@
 		BB12E4B61D19EA8B00BCF4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB12E4B51D19EA8B00BCF4F7 /* Assets.xcassets */; };
 		BB12E4B91D19EA8B00BCF4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB12E4B71D19EA8B00BCF4F7 /* LaunchScreen.storyboard */; };
 		BB12E5961D19F16500BCF4F7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12E5951D19F16500BCF4F7 /* DataManager.swift */; };
-		BB540D0B1D1D7C8F006D472A /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB540D0A1D1D7C8F006D472A /* ArticlesViewController.swift */; };
+		BB540D0B1D1D7C8F006D472A /* ArticlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB540D0A1D1D7C8F006D472A /* ArticlViewController.swift */; };
 		BB7496B41D1C3CB6004D9B01 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7496B31D1C3CB6004D9B01 /* images.xcassets */; };
 		BBE064711D1AAF3000CABCA8 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE064701D1AAF3000CABCA8 /* CoreDataViewController.swift */; };
 		BBE064731D1AB2ED00CABCA8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE064721D1AB2ED00CABCA8 /* Article.swift */; };
@@ -50,7 +50,7 @@
 		BB12E4B81D19EA8B00BCF4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB12E4BA1D19EA8B00BCF4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB12E5951D19F16500BCF4F7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		BB540D0A1D1D7C8F006D472A /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		BB540D0A1D1D7C8F006D472A /* ArticlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlViewController.swift; sourceTree = "<group>"; };
 		BB7496B31D1C3CB6004D9B01 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		BBE064701D1AAF3000CABCA8 /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		BBE064721D1AB2ED00CABCA8 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BBE064811D1AD4F300CABCA8 /* ArticleInfoViewController.swift */,
-				BB540D0A1D1D7C8F006D472A /* ArticlesViewController.swift */,
+				BB540D0A1D1D7C8F006D472A /* ArticlViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			files = (
 				BBE064731D1AB2ED00CABCA8 /* Article.swift in Sources */,
 				BBE0648A1D1B29F400CABCA8 /* ArticleCell.swift in Sources */,
-				BB540D0B1D1D7C8F006D472A /* ArticlesViewController.swift in Sources */,
+				BB540D0B1D1D7C8F006D472A /* ArticlViewController.swift in Sources */,
 				BBE064801D1ACD2900CABCA8 /* ManagedArticle.swift in Sources */,
 				BBE064711D1AAF3000CABCA8 /* CoreDataViewController.swift in Sources */,
 				BB12E4B41D19EA8B00BCF4F7 /* MindStudiosTask.xcdatamodeld in Sources */,
