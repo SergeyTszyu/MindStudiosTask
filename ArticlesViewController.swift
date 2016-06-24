@@ -18,6 +18,7 @@ class ArticlesViewController: CoreDataViewController {
         super.viewDidLoad()
         setup()
         loadAllArticles()
+        self.tableView.tableFooterView = UIView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,11 +61,10 @@ class ArticlesViewController: CoreDataViewController {
             
             for article in self.articles! {
                 
-                if self.isEqualObjects(article, array: resultArray) {
+                // проверка на уникальность артиклов по id
+                if self.isEqualsObjects(article, array: resultArray) {
                     continue
                 }
-                
-                print("count: \(self.articles?.count)")
                 let newArticle = NSEntityDescription.insertNewObjectForEntityForName("ManagedArticle", inManagedObjectContext: self.manager.managedObjectContext) as? ManagedArticle
                 newArticle?.id = article.id
                 newArticle?.content_url = article.content_url
@@ -84,7 +84,7 @@ class ArticlesViewController: CoreDataViewController {
         }
     }
     
-    private func isEqualObjects(article: Article, array: [AnyObject]) -> Bool{
+    private func isEqualsObjects(article: Article, array: [AnyObject]) -> Bool{
         for element in array {
             let temp = element as! ManagedArticle
             if article.id == temp.id {
