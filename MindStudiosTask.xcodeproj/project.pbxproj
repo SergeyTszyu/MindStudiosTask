@@ -180,11 +180,11 @@
 				BB7496BA1D1C611B004D9B01 /* Controllers */,
 				BBE0647C1D1ABCA800CABCA8 /* Models */,
 				BB12E4AB1D19EA8B00BCF4F7 /* AppDelegate.swift */,
+				BB12E4BA1D19EA8B00BCF4F7 /* Info.plist */,
 				BB12E4AF1D19EA8B00BCF4F7 /* Main.storyboard */,
 				BB12E4B51D19EA8B00BCF4F7 /* Assets.xcassets */,
 				BB7496B31D1C3CB6004D9B01 /* images.xcassets */,
 				BB12E4B71D19EA8B00BCF4F7 /* LaunchScreen.storyboard */,
-				BB12E4BA1D19EA8B00BCF4F7 /* Info.plist */,
 				BB12E4B21D19EA8B00BCF4F7 /* MindStudiosTask.xcdatamodeld */,
 				BB12E4C01D19EBB600BCF4F7 /* Libraries */,
 			);
