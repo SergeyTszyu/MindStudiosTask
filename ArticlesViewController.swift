@@ -45,14 +45,25 @@ class ArticlesViewController: CoreDataViewController {
             guard let articles = response.result.value as? [[String : AnyObject]] else {
                 return
             }
-            
             let articleObjects = articles.map { (dictionary) -> Article in
                 return Article(dictionary: dictionary)
             }
             
             self.articles = articleObjects
             
+            let request = NSFetchRequest(entityName: "ManagedArticle")
+            var resultArray: Array<AnyObject>! = Array()
+            do {
+                resultArray = try self.manager.managedObjectContext.executeFetchRequest(request)
+            } catch {
+            }
+            
             for article in self.articles! {
+                
+                if self.isEqualObjects(article, array: resultArray) {
+                    continue
+                }
+                
                 print("count: \(self.articles?.count)")
                 let newArticle = NSEntityDescription.insertNewObjectForEntityForName("ManagedArticle", inManagedObjectContext: self.manager.managedObjectContext) as? ManagedArticle
                 newArticle?.id = article.id
@@ -71,6 +82,16 @@ class ArticlesViewController: CoreDataViewController {
             }
             self.manager.saveContext()
         }
+    }
+    
+    private func isEqualObjects(article: Article, array: [AnyObject]) -> Bool{
+        for element in array {
+            let temp = element as! ManagedArticle
+            if article.id == temp.id {
+                return true
+            }
+        }
+        return false
     }
     
     // MARK: - UITableViewDelegate
@@ -132,6 +153,10 @@ class ArticlesViewController: CoreDataViewController {
         articleCell.titleLabel.text = article.title
         articleCell.thumbImage.image = UIImage(data: article.image_thumb!)
         cell.accessoryType = .DisclosureIndicator
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return false
     }
     
 }

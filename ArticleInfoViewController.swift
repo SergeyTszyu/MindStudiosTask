@@ -45,7 +45,6 @@ class ArticleInfoViewController: UIViewController {
         let url = NSURL(string: article.content_url!)
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
-    
     }
     
     // MARK: - Actions
