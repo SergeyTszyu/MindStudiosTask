@@ -1,0 +1,6 @@
+framework module Pods_MindStudiosTask {
+  umbrella header "Pods-MindStudiosTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

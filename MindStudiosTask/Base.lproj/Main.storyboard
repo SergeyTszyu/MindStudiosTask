@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="t3U-up-VLX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="t3U-up-VLX">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t3U-up-VLX" id="snr-d5-Q8j">
@@ -56,7 +56,7 @@
                                     <outlet property="delegate" destination="Pel-qp-F0X" id="Wwd-LM-9BN"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-5R-AyG">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-5R-AyG">
                                 <rect key="frame" x="282" y="282" width="37" height="37"/>
                                 <color key="color" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
@@ -81,24 +81,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCa-Ih-lzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1468" y="235"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dUf-Ll-rDT">
-            <objects>
-                <viewController id="Yh9-D5-QYz" customClass="ViewController" customModule="MindStudiosTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dtZ-qc-Gyh"/>
-                        <viewControllerLayoutGuide type="bottom" id="mCo-7J-JfB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0UM-eZ-2Cy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2W4-6v-wcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="221" y="-553"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2h7-eB-NbP">
